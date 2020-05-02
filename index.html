@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<main lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,10 +15,32 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section class="header">
+    <header>
+      <div class="container nav-row">
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <a href="https://github.com/terieyenike" target="_blank" class="logo">
+          <h1>Teri</h1>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Work with me</a>
+            </li>
+            <li class="nav__item"><a href="" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="cover">
       <div class="container">
-          <p class="header__text">Lorem, ipsum dolor.</p>
-          <h1 class="header__title">Responsive layouts don't have to be a struggle</h1>
+        <p class="header__text">Lorem, ipsum dolor.</p>
+        <h1 class="header__title">
+          Responsive layouts don't have to be a struggle
+        </h1>
       </div>
     </section>
     <main>
@@ -51,17 +73,19 @@
               Reiciendis corporis magnam officia, libero itaque nobis.
             </p>
           </div>
-          <div class="row__left"><img
-          src="./img/image-01.jpg"
-          alt="man on top of mountain"
-          class="row__img"
-          /></div>
+          <div class="row__left">
+            <img
+              src="./img/image-01.jpg"
+              alt="man on top of mountain"
+              class="row__img"
+            />
+          </div>
         </div>
       </section>
 
       <section class="img__text--container brown">
         <div class="container row">
-          <div class="row__left row__right">
+          <div class="row__left">
             <h2>Created with care</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -76,5 +100,6 @@
         </div>
       </section>
     </main>
+    <script src="./app.js"></script>
   </body>
-</html>
+</main>
